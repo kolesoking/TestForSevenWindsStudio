@@ -1,10 +1,21 @@
 import SnapKit
 
+enum StateView {
+    case registration
+    case login
+}
+
 final class MainViewImpl: UIView {
     
+    private let stackView = UIStackView()
+    
     private let containerView = UIView()
-    private let textField = TextFieldWithTitle()
+    private let emailTextField = TextFieldWithTitle()
+    private let passwordTextField = TextFieldWithTitle()
+    private let repeatPasswordTextField = TextFieldWithTitle()
     private let mainButton = MainButton()
+    
+    private var stateView: StateView = .login
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
@@ -15,6 +26,10 @@ final class MainViewImpl: UIView {
     required public init?(coder: NSCoder) {
         assertionFailure("init(coder:) has not been implemented")
         return nil
+    }
+    
+    func show() {
+        changeStateWithAnimation()
     }
 }
 
@@ -29,7 +44,10 @@ extension MainViewImpl {
 private extension MainViewImpl {
     func setupUI() {
         setupContainerView()
+        setupStackView()
+        
         setupTextField()
+        setupPasswordTextField()
         setupMainButton()
     }
     
@@ -42,13 +60,42 @@ private extension MainViewImpl {
         }
     }
     
-    func setupTextField() {
-        textField.configure(title: "HELLLOOOO EBAT`", placeholder: "Nu I SHO", type: .login)
+    func setupStackView() {
+        stackView.axis = .vertical
+        stackView.spacing = 24
         
-        containerView.addSubview(textField)
-        textField.snp.makeConstraints {
-            $0.center.equalToSuperview()
+        containerView.addSubview(stackView)
+        stackView.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(safeAreaLayoutGuide).offset(190)
             $0.left.right.equalToSuperview().inset(20)
+        }
+    }
+    
+    func setupTextField() {
+        emailTextField.configure(title: "email", placeholder: "example@example.com", type: .login)
+
+        stackView.addArrangedSubview(emailTextField)
+        emailTextField.snp.makeConstraints {
+            $0.left.right.equalToSuperview()
+        }
+    }
+    
+    func setupPasswordTextField() {
+        passwordTextField.configure(title: "Пароль", placeholder: "******", type: .password)
+        
+        stackView.addArrangedSubview(passwordTextField)
+        passwordTextField.snp.makeConstraints {
+            $0.left.right.equalToSuperview()
+        }
+    }
+    
+    func setupRepeatPasswordTextField() {
+        repeatPasswordTextField.configure(title: "Повторите пароль", placeholder: "******", type: .password)
+        
+        stackView.addArrangedSubview(repeatPasswordTextField)
+        repeatPasswordTextField.snp.makeConstraints {
+            $0.left.right.equalToSuperview()
         }
     }
     
@@ -57,8 +104,24 @@ private extension MainViewImpl {
         
         containerView.addSubview(mainButton)
         mainButton.snp.makeConstraints {
-            $0.top.equalTo(textField.snp.bottom).offset(40)
+            $0.top.equalTo(stackView.snp.bottom).offset(30)
             $0.left.right.equalToSuperview().inset(20)
+        }
+    }
+    
+    func changeStateWithAnimation() {
+        
+        UIView.animate(withDuration: 0.2) { [weak self] in
+            guard let self else { return }
+            switch self.stateView {
+            case .login:
+                self.setupRepeatPasswordTextField()
+                self.stateView = .registration
+            case .registration:
+                self.repeatPasswordTextField.removeFromSuperview()
+                self.stateView = .login
+            }
+            self.layoutIfNeeded()
         }
     }
 }

@@ -17,8 +17,8 @@ class MainViewController: UIViewController {
 // MARK: - Private extension -
 private extension MainViewController {
     func setupActions() {
-        mainView.setButtonAction {
-            print("VOT TUT ZAEBOK")
+        mainView.setButtonAction { [weak self] in
+            self?.mainView.show()
         }
     }
 }
