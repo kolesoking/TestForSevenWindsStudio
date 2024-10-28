@@ -10,9 +10,16 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //TODO
+        setupActions()
     }
+}
 
-
+// MARK: - Private extension -
+private extension MainViewController {
+    func setupActions() {
+        mainView.setButtonAction {
+            print("VOT TUT ZAEBOK")
+        }
+    }
 }
 
