@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		7179CC182CD02CAC00AA27D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CC172CD02CAC00AA27D3 /* AppDelegate.swift */; };
-		7179CC1A2CD02CAC00AA27D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CC192CD02CAC00AA27D3 /* SceneDelegate.swift */; };
-		7179CC1C2CD02CAC00AA27D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CC1B2CD02CAC00AA27D3 /* ViewController.swift */; };
-		7179CC1F2CD02CAC00AA27D3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7179CC1E2CD02CAC00AA27D3 /* Base */; };
+		7179CC1C2CD02CAC00AA27D3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CC1B2CD02CAC00AA27D3 /* MainViewController.swift */; };
 		7179CC212CD02CAE00AA27D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7179CC202CD02CAE00AA27D3 /* Assets.xcassets */; };
 		7179CC242CD02CAE00AA27D3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7179CC232CD02CAE00AA27D3 /* Base */; };
+		7179CC342CD030BD00AA27D3 /* MainViewImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CC332CD030BD00AA27D3 /* MainViewImpl.swift */; };
+		7179CC372CD0346100AA27D3 /* MainTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CC362CD0346100AA27D3 /* MainTextField.swift */; };
+		7179CC392CD03ED900AA27D3 /* TextFieldWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CC382CD03ED900AA27D3 /* TextFieldWithTitle.swift */; };
+		7179CC3B2CD03F8400AA27D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CC3A2CD03F8400AA27D3 /* Constants.swift */; };
+		B1E449792E5B2FF9C8F8F1F5 /* Pods_TestForSevenWindsStudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59D85B76AE44E6EB62665C2 /* Pods_TestForSevenWindsStudio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F93E349B97E5CF73BD3DE32 /* Pods-TestForSevenWindsStudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestForSevenWindsStudio.debug.xcconfig"; path = "Target Support Files/Pods-TestForSevenWindsStudio/Pods-TestForSevenWindsStudio.debug.xcconfig"; sourceTree = "<group>"; };
 		7179CC142CD02CAC00AA27D3 /* TestForSevenWindsStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestForSevenWindsStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7179CC172CD02CAC00AA27D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7179CC192CD02CAC00AA27D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7179CC1B2CD02CAC00AA27D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7179CC1E2CD02CAC00AA27D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7179CC1B2CD02CAC00AA27D3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7179CC202CD02CAE00AA27D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7179CC232CD02CAE00AA27D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7179CC252CD02CAE00AA27D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7179CC332CD030BD00AA27D3 /* MainViewImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewImpl.swift; sourceTree = "<group>"; };
+		7179CC362CD0346100AA27D3 /* MainTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextField.swift; sourceTree = "<group>"; };
+		7179CC382CD03ED900AA27D3 /* TextFieldWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithTitle.swift; sourceTree = "<group>"; };
+		7179CC3A2CD03F8400AA27D3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		79EA6ED507B8A2B06428D1FE /* Pods-TestForSevenWindsStudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestForSevenWindsStudio.release.xcconfig"; path = "Target Support Files/Pods-TestForSevenWindsStudio/Pods-TestForSevenWindsStudio.release.xcconfig"; sourceTree = "<group>"; };
+		A59D85B76AE44E6EB62665C2 /* Pods_TestForSevenWindsStudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestForSevenWindsStudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1E449792E5B2FF9C8F8F1F5 /* Pods_TestForSevenWindsStudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4368A36A69CA96B2C1492486 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F93E349B97E5CF73BD3DE32 /* Pods-TestForSevenWindsStudio.debug.xcconfig */,
+				79EA6ED507B8A2B06428D1FE /* Pods-TestForSevenWindsStudio.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7179CC0B2CD02CAC00AA27D3 = {
 			isa = PBXGroup;
 			children = (
 				7179CC162CD02CAC00AA27D3 /* TestForSevenWindsStudio */,
 				7179CC152CD02CAC00AA27D3 /* Products */,
+				4368A36A69CA96B2C1492486 /* Pods */,
+				B627E2E20327279B0DA60DE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +76,113 @@
 		7179CC162CD02CAC00AA27D3 /* TestForSevenWindsStudio */ = {
 			isa = PBXGroup;
 			children = (
-				7179CC172CD02CAC00AA27D3 /* AppDelegate.swift */,
-				7179CC192CD02CAC00AA27D3 /* SceneDelegate.swift */,
-				7179CC1B2CD02CAC00AA27D3 /* ViewController.swift */,
-				7179CC1D2CD02CAC00AA27D3 /* Main.storyboard */,
+				7179CC2B2CD02E4900AA27D3 /* MainFlow */,
+				7179CC2C2CD02E5200AA27D3 /* Common */,
 				7179CC202CD02CAE00AA27D3 /* Assets.xcassets */,
 				7179CC222CD02CAE00AA27D3 /* LaunchScreen.storyboard */,
-				7179CC252CD02CAE00AA27D3 /* Info.plist */,
 			);
 			path = TestForSevenWindsStudio;
+			sourceTree = "<group>";
+		};
+		7179CC2B2CD02E4900AA27D3 /* MainFlow */ = {
+			isa = PBXGroup;
+			children = (
+				7179CC2E2CD02EBD00AA27D3 /* Main */,
+			);
+			path = MainFlow;
+			sourceTree = "<group>";
+		};
+		7179CC2C2CD02E5200AA27D3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7179CC3D2CD03FC400AA27D3 /* Views */,
+				7179CC3C2CD03FB800AA27D3 /* Helpers */,
+				7179CC2D2CD02E7F00AA27D3 /* Application */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7179CC2D2CD02E7F00AA27D3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7179CC172CD02CAC00AA27D3 /* AppDelegate.swift */,
+				7179CC252CD02CAE00AA27D3 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		7179CC2E2CD02EBD00AA27D3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7179CC322CD02FBE00AA27D3 /* Builder */,
+				7179CC312CD02FB800AA27D3 /* Router */,
+				7179CC302CD02FAD00AA27D3 /* ViewModel */,
+				7179CC2F2CD02F9600AA27D3 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7179CC2F2CD02F9600AA27D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7179CC352CD0344D00AA27D3 /* Views */,
+				7179CC1B2CD02CAC00AA27D3 /* MainViewController.swift */,
+				7179CC332CD030BD00AA27D3 /* MainViewImpl.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7179CC302CD02FAD00AA27D3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7179CC312CD02FB800AA27D3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		7179CC322CD02FBE00AA27D3 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		7179CC352CD0344D00AA27D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7179CC382CD03ED900AA27D3 /* TextFieldWithTitle.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7179CC3C2CD03FB800AA27D3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7179CC3A2CD03F8400AA27D3 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7179CC3D2CD03FC400AA27D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7179CC362CD0346100AA27D3 /* MainTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B627E2E20327279B0DA60DE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A59D85B76AE44E6EB62665C2 /* Pods_TestForSevenWindsStudio.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7179CC282CD02CAE00AA27D3 /* Build configuration list for PBXNativeTarget "TestForSevenWindsStudio" */;
 			buildPhases = (
+				6A2C7287186A68F04647439F /* [CP] Check Pods Manifest.lock */,
 				7179CC102CD02CAC00AA27D3 /* Sources */,
 				7179CC112CD02CAC00AA27D3 /* Frameworks */,
 				7179CC122CD02CAC00AA27D3 /* Resources */,
+				77B7EF91CE445355B25B7B60 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +247,70 @@
 			files = (
 				7179CC212CD02CAE00AA27D3 /* Assets.xcassets in Resources */,
 				7179CC242CD02CAE00AA27D3 /* Base in Resources */,
-				7179CC1F2CD02CAC00AA27D3 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A2C7287186A68F04647439F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestForSevenWindsStudio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77B7EF91CE445355B25B7B60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestForSevenWindsStudio/Pods-TestForSevenWindsStudio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestForSevenWindsStudio/Pods-TestForSevenWindsStudio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestForSevenWindsStudio/Pods-TestForSevenWindsStudio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7179CC102CD02CAC00AA27D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7179CC1C2CD02CAC00AA27D3 /* ViewController.swift in Sources */,
+				7179CC372CD0346100AA27D3 /* MainTextField.swift in Sources */,
+				7179CC1C2CD02CAC00AA27D3 /* MainViewController.swift in Sources */,
 				7179CC182CD02CAC00AA27D3 /* AppDelegate.swift in Sources */,
-				7179CC1A2CD02CAC00AA27D3 /* SceneDelegate.swift in Sources */,
+				7179CC392CD03ED900AA27D3 /* TextFieldWithTitle.swift in Sources */,
+				7179CC342CD030BD00AA27D3 /* MainViewImpl.swift in Sources */,
+				7179CC3B2CD03F8400AA27D3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7179CC1D2CD02CAC00AA27D3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7179CC1E2CD02CAC00AA27D3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7179CC222CD02CAE00AA27D3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -203,7 +359,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +421,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +441,7 @@
 		};
 		7179CC292CD02CAE00AA27D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F93E349B97E5CF73BD3DE32 /* Pods-TestForSevenWindsStudio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,12 +449,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3LNA9DKLNP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestForSevenWindsStudio/Info.plist;
+				INFOPLIST_FILE = TestForSevenWindsStudio/Common/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +470,7 @@
 		};
 		7179CC2A2CD02CAE00AA27D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79EA6ED507B8A2B06428D1FE /* Pods-TestForSevenWindsStudio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,12 +478,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3LNA9DKLNP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestForSevenWindsStudio/Info.plist;
+				INFOPLIST_FILE = TestForSevenWindsStudio/Common/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
