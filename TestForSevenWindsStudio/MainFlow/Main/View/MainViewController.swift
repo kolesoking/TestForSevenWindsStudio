@@ -21,11 +21,18 @@ private extension MainViewController {
     func setupActions() {
         mainView.setLoginTextFieldsAction { [weak self] email, password in
             print(email, password)
+            self?.openVC()
         }
         
         mainView.setRegistrationTextFieldsAction { [weak self] email, password, repeatPassword in
             print(email, password, repeatPassword)
+            self?.openVC()
         }
+    }
+    
+    func openVC() {
+        let vc = LocationsViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

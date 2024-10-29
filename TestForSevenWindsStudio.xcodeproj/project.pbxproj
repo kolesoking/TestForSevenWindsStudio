@@ -16,6 +16,7 @@
 		7179CC392CD03ED900AA27D3 /* TextFieldWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CC382CD03ED900AA27D3 /* TextFieldWithTitle.swift */; };
 		7179CC3B2CD03F8400AA27D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CC3A2CD03F8400AA27D3 /* Constants.swift */; };
 		7179CC3F2CD046DA00AA27D3 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CC3E2CD046DA00AA27D3 /* MainButton.swift */; };
+		7179CC432CD0EB8E00AA27D3 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CC422CD0EB8E00AA27D3 /* LocationsViewController.swift */; };
 		B1E449792E5B2FF9C8F8F1F5 /* Pods_TestForSevenWindsStudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59D85B76AE44E6EB62665C2 /* Pods_TestForSevenWindsStudio.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		7179CC382CD03ED900AA27D3 /* TextFieldWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithTitle.swift; sourceTree = "<group>"; };
 		7179CC3A2CD03F8400AA27D3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7179CC3E2CD046DA00AA27D3 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		7179CC422CD0EB8E00AA27D3 /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		79EA6ED507B8A2B06428D1FE /* Pods-TestForSevenWindsStudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestForSevenWindsStudio.release.xcconfig"; path = "Target Support Files/Pods-TestForSevenWindsStudio/Pods-TestForSevenWindsStudio.release.xcconfig"; sourceTree = "<group>"; };
 		A59D85B76AE44E6EB62665C2 /* Pods_TestForSevenWindsStudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestForSevenWindsStudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 		7179CC2B2CD02E4900AA27D3 /* MainFlow */ = {
 			isa = PBXGroup;
 			children = (
+				7179CC402CD0EB5E00AA27D3 /* Locations */,
 				7179CC2E2CD02EBD00AA27D3 /* Main */,
 			);
 			path = MainFlow;
@@ -178,6 +181,22 @@
 				7179CC3E2CD046DA00AA27D3 /* MainButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7179CC402CD0EB5E00AA27D3 /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				7179CC412CD0EB6900AA27D3 /* View */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		7179CC412CD0EB6900AA27D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7179CC422CD0EB8E00AA27D3 /* LocationsViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B627E2E20327279B0DA60DE5 /* Frameworks */ = {
@@ -305,6 +324,7 @@
 				7179CC372CD0346100AA27D3 /* MainTextField.swift in Sources */,
 				7179CC1C2CD02CAC00AA27D3 /* MainViewController.swift in Sources */,
 				7179CC3F2CD046DA00AA27D3 /* MainButton.swift in Sources */,
+				7179CC432CD0EB8E00AA27D3 /* LocationsViewController.swift in Sources */,
 				7179CC182CD02CAC00AA27D3 /* AppDelegate.swift in Sources */,
 				7179CC392CD03ED900AA27D3 /* TextFieldWithTitle.swift in Sources */,
 				7179CC342CD030BD00AA27D3 /* MainViewImpl.swift in Sources */,
