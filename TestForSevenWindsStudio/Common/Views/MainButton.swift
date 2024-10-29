@@ -1,10 +1,5 @@
 import SnapKit
 
-enum MainButtonType {
-    case login
-    case registration
-}
-
 final class MainButton: UIView {
     
     private let mainButton = UIButton()
@@ -22,7 +17,7 @@ final class MainButton: UIView {
         return nil
     }
     
-    func configure(with text: String, type: MainButtonType) {
+    func configure(with text: String) {
         setButtonTitle(with: text)
     }
 }
