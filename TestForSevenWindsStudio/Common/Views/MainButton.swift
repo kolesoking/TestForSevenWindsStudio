@@ -49,7 +49,6 @@ private extension MainButton {
     
     @objc func tap() {
         actionButton?()
-        print("Hello")
     }
     
     func setButtonTitle(with text: String) {

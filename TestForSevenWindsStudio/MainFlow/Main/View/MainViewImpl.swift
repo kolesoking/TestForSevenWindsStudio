@@ -17,10 +17,15 @@ final class MainViewImpl: UIView {
     private let questionLabel = UILabel()
 
     private var stateView: StateView = .login
+    
+    private var buttonAction: (() -> Void)?
+    private var loginTextFieldsAction: ((String, String) -> Void)?
+    private var registrationTextFieldsAction: ((String, String, String) -> Void)?
 
     override public init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
+        setActions()
     }
 
     @available(*, unavailable)
@@ -36,8 +41,27 @@ final class MainViewImpl: UIView {
 
 // MARK: - Actions -
 extension MainViewImpl {
-    func setButtonAction(_ action: @escaping (() -> Void)) {
-        mainButton.setAction(action)
+    func setLoginTextFieldsAction(_ action: @escaping ((String, String) -> Void)) {
+        self.loginTextFieldsAction = action
+    }
+    
+    func setRegistrationTextFieldsAction(_ action: @escaping ((String, String, String) -> Void)) {
+        self.registrationTextFieldsAction = action
+    }
+}
+
+// MARK: - Set Actions -
+private extension MainViewImpl {
+    func setActions() {
+        mainButton.setAction { [weak self] in
+            guard let self else { return }
+            switch self.stateView {
+            case .registration:
+                registrationTextFieldsAction?("ok","po","lk")
+            case .login:
+                loginTextFieldsAction?("fd","asd")
+            }
+        }
     }
 }
 

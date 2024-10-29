@@ -4,6 +4,8 @@ class MainViewController: UIViewController {
     
     private let mainView = MainViewImpl()
     
+    private var stateView: StateView = .login
+    
     override func loadView() {
         view = mainView
     }
@@ -17,8 +19,12 @@ class MainViewController: UIViewController {
 // MARK: - Private extension -
 private extension MainViewController {
     func setupActions() {
-        mainView.setButtonAction { [weak self] in
-            self?.mainView.show()
+        mainView.setLoginTextFieldsAction { [weak self] email, password in
+            print(email, password)
+        }
+        
+        mainView.setRegistrationTextFieldsAction { [weak self] email, password, repeatPassword in
+            print(email, password, repeatPassword)
         }
     }
 }
