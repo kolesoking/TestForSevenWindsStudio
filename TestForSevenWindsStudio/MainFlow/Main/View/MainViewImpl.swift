@@ -14,12 +14,14 @@ final class MainViewImpl: UIView {
     private let passwordTextField = TextFieldWithTitle()
     private let repeatPasswordTextField = TextFieldWithTitle()
     private let mainButton = MainButton()
+    private let questionLabel = UILabel()
     
     private var stateView: StateView = .login
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
+        setTitleForQuestionLabel()
     }
     
     @available(*, unavailable)
@@ -49,6 +51,7 @@ private extension MainViewImpl {
         setupTextField()
         setupPasswordTextField()
         setupMainButton()
+        setupQuestionLabel()
     }
     
     func setupContainerView() {
@@ -109,6 +112,47 @@ private extension MainViewImpl {
         }
     }
     
+    func setupQuestionLabel() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapQuestionLabel))
+        questionLabel.addGestureRecognizer(tap)
+        questionLabel.isUserInteractionEnabled = true
+        
+        containerView.addSubview(questionLabel)
+        questionLabel.snp.makeConstraints {
+            $0.centerX.equalTo(mainButton)
+            $0.top.equalTo(mainButton.snp.bottom).offset(24)
+        }
+    }
+    
+    func setTitleForQuestionLabel() {
+        
+        var text = "asdasdasdasd"
+        
+        switch stateView {
+        case .registration:
+            text = "Уже есть аккаунт"
+        case .login:
+            text = "Заригистрироваться?"
+        }
+        
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = .center
+        paragraphStyle.lineHeightMultiple = 0.79
+        paragraphStyle.minimumLineHeight = 20
+        paragraphStyle.maximumLineHeight = 20
+        
+        let attributes = NSAttributedString(
+            string: text,
+            attributes: [
+                .font: UIFont.systemFont(ofSize: 17, weight: .regular),
+                .paragraphStyle: paragraphStyle,
+                .foregroundColor: Constants.mainColor.cgColor
+            ]
+        )
+        
+        questionLabel.attributedText = attributes
+    }
+    
     func changeStateWithAnimation() {
         
         UIView.animate(withDuration: 0.2) { [weak self] in
@@ -121,7 +165,12 @@ private extension MainViewImpl {
                 self.repeatPasswordTextField.removeFromSuperview()
                 self.stateView = .login
             }
+            self.setTitleForQuestionLabel()
             self.layoutIfNeeded()
         }
+    }
+    
+    @objc func tapQuestionLabel() {
+        changeStateWithAnimation()
     }
 }
