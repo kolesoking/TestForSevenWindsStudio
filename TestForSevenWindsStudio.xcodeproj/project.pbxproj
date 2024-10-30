@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		711DF08C2CD2E8BF009F9EB0 /* LocationsListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711DF08B2CD2E8BF009F9EB0 /* LocationsListAdapter.swift */; };
+		711DF08F2CD2E992009F9EB0 /* LocationCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711DF08E2CD2E992009F9EB0 /* LocationCellModel.swift */; };
+		711DF0922CD2EB12009F9EB0 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711DF0912CD2EB12009F9EB0 /* LocationCell.swift */; };
 		7179CC182CD02CAC00AA27D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CC172CD02CAC00AA27D3 /* AppDelegate.swift */; };
 		7179CC1C2CD02CAC00AA27D3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CC1B2CD02CAC00AA27D3 /* MainViewController.swift */; };
 		7179CC212CD02CAE00AA27D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7179CC202CD02CAE00AA27D3 /* Assets.xcassets */; };
@@ -23,6 +26,9 @@
 
 /* Begin PBXFileReference section */
 		3F93E349B97E5CF73BD3DE32 /* Pods-TestForSevenWindsStudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestForSevenWindsStudio.debug.xcconfig"; path = "Target Support Files/Pods-TestForSevenWindsStudio/Pods-TestForSevenWindsStudio.debug.xcconfig"; sourceTree = "<group>"; };
+		711DF08B2CD2E8BF009F9EB0 /* LocationsListAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListAdapter.swift; sourceTree = "<group>"; };
+		711DF08E2CD2E992009F9EB0 /* LocationCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCellModel.swift; sourceTree = "<group>"; };
+		711DF0912CD2EB12009F9EB0 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		7179CC142CD02CAC00AA27D3 /* TestForSevenWindsStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestForSevenWindsStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7179CC172CD02CAC00AA27D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7179CC1B2CD02CAC00AA27D3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +65,30 @@
 				79EA6ED507B8A2B06428D1FE /* Pods-TestForSevenWindsStudio.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		711DF08A2CD2E872009F9EB0 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				711DF08B2CD2E8BF009F9EB0 /* LocationsListAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		711DF08D2CD2E983009F9EB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				711DF08E2CD2E992009F9EB0 /* LocationCellModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		711DF0902CD2EAFC009F9EB0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				711DF0912CD2EB12009F9EB0 /* LocationCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		7179CC0B2CD02CAC00AA27D3 = {
@@ -196,6 +226,9 @@
 		7179CC412CD0EB6900AA27D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				711DF0902CD2EAFC009F9EB0 /* Components */,
+				711DF08D2CD2E983009F9EB0 /* Models */,
+				711DF08A2CD2E872009F9EB0 /* Adapters */,
 				7179CC422CD0EB8E00AA27D3 /* LocationsViewController.swift */,
 				7179CC442CD0EC5800AA27D3 /* LocationsViewImpl.swift */,
 			);
@@ -328,6 +361,9 @@
 				7179CC1C2CD02CAC00AA27D3 /* MainViewController.swift in Sources */,
 				7179CC3F2CD046DA00AA27D3 /* MainButton.swift in Sources */,
 				7179CC432CD0EB8E00AA27D3 /* LocationsViewController.swift in Sources */,
+				711DF08C2CD2E8BF009F9EB0 /* LocationsListAdapter.swift in Sources */,
+				711DF08F2CD2E992009F9EB0 /* LocationCellModel.swift in Sources */,
+				711DF0922CD2EB12009F9EB0 /* LocationCell.swift in Sources */,
 				7179CC182CD02CAC00AA27D3 /* AppDelegate.swift in Sources */,
 				7179CC392CD03ED900AA27D3 /* TextFieldWithTitle.swift in Sources */,
 				7179CC342CD030BD00AA27D3 /* MainViewImpl.swift in Sources */,
